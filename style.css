@@ -1,0 +1,105 @@
+body{
+  margin: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pozadina{
+  height: 775px;
+  background-size: cover;
+  background-position: center;
+  animation: changeBackground 20s infinite;
+}
+@keyframes changeBackground{
+  0%, 100%{
+    background-image: url(slike/image\ \(1\).jpg);
+  }
+  33%{
+    background-image: url(slike/image\ \(2\).jpg);
+  }
+  66%{
+    background-image: url(slike/image\ \(3\).jpg);
+  }
+}
+.container{
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+}
+header{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.logo h3{
+  margin: 0;
+  padding: 0;
+}
+.prvi{
+  color: rgb(211, 37, 37);;
+}
+.drugi{
+  color: white;
+}
+.logo img{
+  margin-right: 15px;
+}
+nav {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 35px;
+  font-weight:500;
+  font-size: 13px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px transparent;
+}
+li:hover{
+  border-bottom: rgb(211, 37, 37) solid 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+}
+.naslov h1{
+  color: white;
+  font-size: 90px;
+  font-weight: 350;
+  margin-bottom: 30px;
+}
+.naslov p{
+  color: gray;
+  width:60%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.naslov{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+button{
+  background-color: rgb(211, 37, 37);
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  font-size: 17px;
+}
