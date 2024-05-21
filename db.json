@@ -1,0 +1,14 @@
+{
+  "user": [
+    {
+      "id": "Test",
+      "name": "Test Jedan",
+      "password": "123",
+      "email": "TestJedan@gmail.com",
+      "phone": "062921096",
+      "Drzava": "BiH",
+      "Adresa": "Pojske17A",
+      "Spol": "Muško"
+    }
+  ]
+}
