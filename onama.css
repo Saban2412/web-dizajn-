@@ -1,12 +1,13 @@
 body{
   margin: 0%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color:#242424;
 }
 .pozadina{
-  height: 775px;
+  height: 500px;
   background-size: cover;
   background-position: center;
-  background-image: url(slike/images/pozadinaonama.jpeg);
+  background-image: url(slike/wallpaper.avif);
 }
 .container{
   width: 75%;
@@ -66,150 +67,203 @@ a {
 }
 .naslov h1{
   color: white;
-  font-size: 90px;
-  font-weight: 350;
+  font-size: 65px;
+  font-weight: 400;
   margin-bottom: 30px;
-  text-align: center;
-  padding-top: 70px;
-  font-size: 70px;
 }
-.border{
-  background-color: white;
-  height: 6px;
-  width: 150px;
+.naslov p{
+  color: gray;
+  width:60%;
+  text-align: justify;
+  margin-bottom: 60px;
 }
 .naslov{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 60%;
+  margin-left: 30px;
 }
-.stavke{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
+
+.crvene{
+  color: red;
+}
+.bijele{
   color: white;
 }
-.stavke img{
-  height: 100px;
-  width: 100px;
+.okolo{
+  height: 300px;
+  position: relative;
+  border-bottom: 2px solid rgb(69, 69, 69);
+}
+.okolo::before, .okolo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 2px; 
+  height: 100%; 
+  background: linear-gradient(to top, rgb(69, 69, 69), transparent); 
+}
+
+.okolo::before {
+  left: 0; 
+}
+
+.okolo::after {
+  right: 0;
 }
 .stavka{
   display: flex;
-  flex-direction: column;
+  justify-content:space-between;
   align-items: center;
-  text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-top: 100px;
+  height: 400px;
+  width: 100%;
 }
-.stavke h1{
-  font-weight: 300;
-  font-size: 25px;
-}
-#slika1{
-  height: 300px;
-  background-image: url(slike/onama2.jpg);
-  width: 50%;
-  background-size: cover;
-  background-position: center;
-}
-#slika2{
-  height: 300px;
-  background-image: url(slike/onama3.jpg);
-  width: 50%;
-  background-size: cover;
-  background-position: center;
-}
-#slika3{
-  height: 300px;
-  background-image: url(slike/onama4.jpg);
-  width: 50%;
-  background-size: cover;
-  background-position: top;
-}
-#slika4{
-  height: 300px;
-  background-image: url(slike/onama3.jpg);
-  width: 50%;
-  background-size: cover;
-  background-position: center;
-}
-.tekst{
+.img1, .img2, .img3, .img4{
+  border-radius: 20px;
   width: 40%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+.img1{
+  background-image: url(slike/onama2.jpg);
+}
+.img2{
+  background-image: url(slike/onama3.jpg);
+}
+.img3{
+  background-image: url(slike/onama4.jpg);
+}
+.img4{
+  background-image: url(slike/pozadina.jpg);
+}
+.txt{
+  width: 40%;
+}
+.txt p{
+  text-align: justify;
+  color: gray;
+}
+.txt h1{
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+}
+.linija{
+  height: 300px;
+  width: 4px;
+  background-color: red;
   margin: auto;
-  color: white;
 }
-.content{
-  display: flex;
-  align-items: center;
-  background-color: rgb(24, 24, 24);
+.form__group {
+  position: relative;
+  padding:30px 0 0;
+  width: 100%;
 }
-footer{
-  background-color: rgb(21, 21, 21);
-}
-.pridruzise{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.pridruzise h1{
-  font-size: 60px;
-  font-weight: 200;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-.pridruzise p{
-  margin-bottom: 50px;
-}
-.login input{
-  height: 45px;
-  width: 400px;
-  font-size: 17px;
-}
-.login{
-  display: flex;
-  margin-bottom: 50px;
-}
-.ikone{
-  display: flex;
-  justify-content: space-evenly;
-  width: 30%;
-  margin: auto;
-  border-top: 3px solid white;
-  padding-top: 50px;
-}
-.ikone img{
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-}
-.ikone .iza{
-  background-color: rgb(241, 61, 61);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-}
-.Copyright{
-  color: white;
-  text-align: center;
-}
-button{
-  background-color: rgb(211, 37, 37);
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
   border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
   font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
 }
-#scroll1, #scroll2, #scroll3, #scroll4{
-  background-color: transparent;
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #540000, red);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
   color: white;
-  padding-bottom: 15px;
-  cursor: pointer;
-  border-top: 2px solid white;
+  font-weight: 700;
 }
-#scroll1:hover, #scroll2:hover, #scroll3:hover, #scroll4:hover{
-  border-bottom: 3px solid white;
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+.footer-lijevi{
+  border-top: 2px solid red;
+  height: 500px;
+  width: 50%;
+  background-color: #2c2c2c;
+}
+.kontent{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+.kontent h1{
+  color: white;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footer{
+  margin-top: 100px;
+}
+.footer button{
+  width: 150px;
+  height: 40px;
+  background-color:#242424;
+  color: white;
+  font-size: 15px;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.footer button:hover{
+  background-color: #2c2c2c;
+  cursor: pointer;
+  border: 3px solid red;
+}
+.lajna{
+  width: 100px;
+  height: 4px;
+  background-color: red;
+  margin-top: 0%;
+}
+.footer{
+  margin-top: 100px;
+  display: flex;
+}
+.footer-desni{
+  width: 50%;
+  height: 500px;
+  border-top: 2px solid red;
+}
+iframe{
+  width: 100%;
+  height: 100%;
 }
