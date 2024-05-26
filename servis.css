@@ -14,6 +14,9 @@ body{
   margin: auto;
   overflow: hidden;
 }
+.odjava{
+  color: red;
+}
 header{
   margin-top: 50px;
   display: flex;
@@ -125,7 +128,7 @@ a {
 
 .categories {
   width: 30%;
-  height: 70vh;
+  height: 544px;
   background: #2c2c2c;
   padding: 15px 0px 30px 0px;
   box-sizing: border-box;
@@ -310,12 +313,7 @@ a {
 .form__field:required, .form__field:invalid {
   box-shadow: none;
 }
-.footer-lijevi{
-  border-top: 2px solid red;
-  height: 500px;
-  width: 50%;
-  background-color: #2c2c2c;
-}
+
 .kontent{
   width: 80%;
   height: 80%;
@@ -327,31 +325,50 @@ a {
   font-weight: 400;
   margin-bottom: 10px;
 }
-.footer{
-  margin-top: 100px;
-  display: flex;
-}
-.footer-desni{
-  width: 50%;
-  height: 500px;
-  border-top: 2px solid red;
-}
-iframe{
+footer{
   width: 100%;
-  height: 100%;
-}
-.footer button{
-  width: 150px;
-  height: 40px;
-  background-color:#242424;
-  color: white;
-  font-size: 15px;
-  border: 2px solid red;
-  border-radius: 20px;
-  margin-top: 25px;
-}
-.footer button:hover{
   background-color: #2c2c2c;
-  cursor: pointer;
-  border: 3px solid red;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+.left{
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.right{
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+.right img{
+  height: 30px;
+  margin:auto;
+}
+.container2{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-right: 100px;
+}
+.nav h4{
+  font-size: 15px;
+  font-weight: 100;
+}
+hr{
+  margin-top: 40px;
+}
+.bottom{
+  display: flex;
+  color: gray;
+  width: 30%;
+  justify-content: space-between;
+  margin: auto;
 }
